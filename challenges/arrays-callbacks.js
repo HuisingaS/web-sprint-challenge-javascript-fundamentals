@@ -26,7 +26,7 @@ zooAnimals.forEach(function(item){
   displayNames.push(`Name: ${item.animal_name}, Scientific: ${item.scientific_name}`);
 });
 
-console.log(displayNames);
+// console.log(displayNames);
 
 
 
@@ -52,7 +52,7 @@ const lowPopulationAnimals =  zooAnimals.filter(function(element){
   return element.population < 5;
 });
 
-console.log(lowPopulationAnimals);
+// console.log(lowPopulationAnimals);
 
 
 
@@ -67,7 +67,7 @@ zooAnimals.reduce(function(accumulator, item){
   return populationTotal = accumulator + item.population
 }, 0);
 
-console.log(populationTotal);
+// console.log(populationTotal);
 
 
 

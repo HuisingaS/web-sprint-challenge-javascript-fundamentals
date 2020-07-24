@@ -13,12 +13,29 @@ function myFunction() {
     console.log(internal);
   };
   nestedFunction();
-}
+};
 myFunction();
 
-// Explanation: 
+
+
+// Explanation:
+
+//    -Functions search up the tree to grab variables, objects, arrays, functions from/available to their parents etc.
+//      'nestedFunction' is a child of myFunction, because 'internal' is within the scope of its parent.
+//       Therefore, 'nestedFunction' can use the 'internal' variable.
+
 
 
 /* Task 2: Counter */
 
-/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
+function summation (num) {
+  let sum = 0;
+  for (let i = 1 ;  i <= num; i ++){
+    sum += i;
+  };
+  return sum;
+};
+// console.log(summation(4));
+
+/* Create a function called `summation` that accepts a parameter and uses a counter to return the summation of that number. 
+For example, `summation(4)` should return 10 because 1+2+3+4 is 10. */
